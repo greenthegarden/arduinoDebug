@@ -1,19 +1,19 @@
-#include "Debug.h"
-
+// ensure DEBUG_LEVEL is defined prior to inlcuding the library.
 #ifndef DEBUG_LEVEL
 #define DEBUG_LEVEL 1
 #endif
 
+#include "Debug.h"
+
 const unsigned long BAUD_RATE = 9600;
 
-/*--------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------
   setup()
   Called by the Arduino framework once, before the main loop begins
-  --------------------------------------------------------------------------------------*/
+  ----------------------------------------------------------------------------*/
 void setup() {
 #if DEBUG_LEVEL > 0
   Serial.begin(BAUD_RATE);
-
   Serial.println("DEBUG EXAMPLE");
 #endif
 
@@ -22,8 +22,8 @@ void setup() {
   DEBUG_LOG(3, "LEVEL 3");  // not seen if DEBUG_LEVEL value is less than 3
 }
 
-/*--------------------------------------------------------------------------------------
+/*------------------------------------------------------------------------------
   loop()
   Arduino main loop
-  --------------------------------------------------------------------------------------*/
+  ----------------------------------------------------------------------------*/
 void loop() {}
