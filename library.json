@@ -1,7 +1,6 @@
 {
   "name": "Debug",
   "description": "Debug library for Ardino",
-  "authors": "",
   "repository": {
     "type": "git",
     "url": "https://github.com/greenthegarden/arduinoDebug.git"
